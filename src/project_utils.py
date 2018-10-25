@@ -33,7 +33,8 @@ class Project:
         for file in files:
             file_ext_len = len(os.path.splitext(file)[1])
             file = file[:-file_ext_len]
-            os.remove(file + ".xml")
+            if os.path.isfile(file + ".xml"):
+                os.remove(file + ".xml")
 
     def get_files_from_project(self, file_type, exclude = False):
         res_files = []
