@@ -36,6 +36,43 @@ You can now simply launch the main script with the path to your C project as an 
 $> python jane_c.py C:\Projects\ExampleProject
 ```
 
+### Rules implemented
+
+The following is a list of the standards that have been implemented and their implementation details:
+
+| Rule   | Implemented                 | Details              |
+|--------|:---------------------------:|----------------------|
+| O1     | :heavy_check_mark:          | Fully Implemented    |
+| O2     | :x:                         | Can't be implemented |
+| O3     | :heavy_check_mark:          | Fully Implemented    |
+| O4     | :heavy_check_mark: :heavy_exclamation_mark:    | Just checking `snake_case` convention    |
+| G1     | :heavy_check_mark:          | Fully Implemented    |
+| G2     | :heavy_check_mark:          | Fully Implemented    |
+| G3     | :x:                         | Can't be implemented |
+| G4     | :x:                         | Not implemented      |
+| F1     | :x:                         | Not implemented      |
+| F2     | :heavy_check_mark: :heavy_exclamation_mark:        | Just checking `snake_case` convention    |
+| F3     | :heavy_check_mark:          | Fully Implemented    |
+| F4     | :heavy_check_mark:          | Fully Implemented    |
+| F5     | :heavy_check_mark: :heavy_exclamation_mark:        | Not checking if structures are transmitted as parameters using a pointer    |
+| F6     | :heavy_check_mark:          | Fully Implemented    |
+| L1     | :heavy_check_mark:          | Fully Implemented    |
+| L2     | :heavy_check_mark:          | Fully Implemented    |
+| L3     | :x:                         | Not implemented      |
+| L4     | :x:                         | Not implemented      |
+| L5     | :x:                         | Not implemented      |
+| L6     | :x:                         | Not implemented      |
+| V1     | :x:                         | Not implemented      |
+| V2     | :x:                         | Not implemented      |
+| V3     | :x:                         | Not implemented      |
+| C1     | :x:                         | Not implemented      |
+| C2     | :x:                         | Not implemented      |
+| A1     | :x:                         | Not implemented      |
+| A2     | :x:                         | Not implemented      |
+| H1     | :x:                         | Not implemented      |
+| H2     | :x:                         | Not implemented      |
+| H3     | :x:                         | Not implemented      |
+
 ## Contributing
 
 Each rule is defined in a separate file, which you can find in the `c_rules` folder.
@@ -61,7 +98,7 @@ class RuleChecker:
 ```
 ________
 
-The `project` variable allows you to access the list of files contained in the project given as an argument. You can only request certain files, or exclude some.
+The `project` variable allows you to access the list of files contained in the project given as an argument. You can request only certain files, or exclude some.
 ```python
 files = []
 files.extend(project.get_files_from_project(project.FILE_TYPES["ALL"], exclude = False))
