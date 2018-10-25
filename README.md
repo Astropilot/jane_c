@@ -3,7 +3,9 @@
 
 Jane is an ETNA standards fault detection program for projects written in C.
 It was written in Python 2.7 for Windows and bases its code analysis on the srcml framework.
+
 This program will check each of the standards defined by ETNA and indicate the problems found with as much precision as possible.
+
 Be aware that this program is developed by a student and that the verifications are based on the "C Coding Style" and may differ from the official verification program used by ETNA.
 
 You are invited to participate in the implementation and correction of the verification rules! For that look at the category "Contributing".
