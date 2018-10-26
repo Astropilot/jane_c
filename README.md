@@ -65,9 +65,9 @@ The following is a list of the standards that have been implemented and their im
 | L6     | :heavy_check_mark:          | Fully Implemented    |
 | V1     | :heavy_check_mark:          | Fully Implemented    |
 | V2     | :x:                         | Not implemented      |
-| V3     | :x:                         | Not implemented      |
-| C1     | :x:                         | Not implemented      |
-| C2     | :x:                         | Not implemented      |
+| V3     | :heavy_check_mark: :heavy_exclamation_mark:                         | Not all pointer can be checked (need fix)      |
+| C1     | :heavy_check_mark:          | Fully Implemented    |
+| C2     | :heavy_check_mark:          | Fully Implemented    |
 | A1     | :x:                         | Not implemented      |
 | A2     | :x:                         | Not implemented      |
 | H1     | :x:                         | Not implemented      |
