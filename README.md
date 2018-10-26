@@ -82,8 +82,14 @@ However, a minimal structure is required for your rule to be functional:
 
 ```python
 # -*- coding: utf-8 -*-
-# These libraries are not required
-# but are strongly recommended for code analysis.
+
+"""
+Jane for C Projects
+Author: YOUR_NAME (https://github.com/Astropilot/jane_c)
+
+RULE_NAME Rule: RULE_SHORT_DESCRIPTION
+"""
+
 from etna_style_utils import *
 from srcml import *
 
