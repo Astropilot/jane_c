@@ -15,7 +15,7 @@ You are invited to participate in the implementation and correction of the verif
 
 ### Prerequisites
 
-In order to make Jena work, you will need:
+In order to make Jane work, you will need:
 * [Python 2.X](https://www.python.org/downloads/) (X >= 7)
 * [lxml library for Python](https://lxml.de/)
 * [srcML Framework](https://www.srcml.org/#download)
