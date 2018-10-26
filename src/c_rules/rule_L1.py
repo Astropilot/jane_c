@@ -27,7 +27,7 @@ class RuleChecker:
         print "Rule reminder: Only one statement per line."
         is_rule_ok = True
 
-        source_files = project.get_files_from_project(project.FILE_TYPES["C_SOURCES"])
+        source_files = project.get_files_from_project(project.FILE_TYPES["C_FILES"])
 
         re_newline = re.compile(r'\n')
         for file in source_files:
@@ -66,12 +66,6 @@ class RuleChecker:
                 start_line = len(re_newline.findall(content, 0, match.start(1)))+1
                 is_rule_ok = False
                 print "L1 Violation at line " + str(start_line-1) + ", one-line if forbidden! File: " + file
-
-            multiple_decls = root.xpath("/unit//decl_stmt[count(decl) > 1]")
-            for multiple_decl in multiple_decls:
-                start_line = multiple_decl.sourceline
-                is_rule_ok = False
-                print "L1 Violation at line " + str(start_line-1) + ", multiple variable declaration on same line! File: " + file
 
         if is_rule_ok:
             print "Good job buddy, no violation!"

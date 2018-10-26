@@ -22,3 +22,8 @@ def strip_ns_prefix(tree):
     for element in tree.xpath(query):
         element.tag = etree.QName(element).localname
     return tree
+
+def ignore_c_comments(tree):
+    for element in tree.xpath("//comment"):
+        element.getparent().remove(element)
+    return tree

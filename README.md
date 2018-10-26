@@ -58,10 +58,10 @@ The following is a list of the standards that have been implemented and their im
 | F6     | :heavy_check_mark:          | Fully Implemented    |
 | L1     | :heavy_check_mark:          | Fully Implemented    |
 | L2     | :heavy_check_mark:          | Fully Implemented    |
-| L3     | :x:                         | Not implemented      |
-| L4     | :x:                         | Not implemented      |
-| L5     | :x:                         | Not implemented      |
-| L6     | :x:                         | Not implemented      |
+| L3     | :x:                         | Partially implemented      |
+| L4     | :heavy_check_mark:          | Fully Implemented    |
+| L5     | :heavy_check_mark:          | Fully Implemented    |
+| L6     | :heavy_check_mark:          | Fully Implemented    |
 | V1     | :x:                         | Not implemented      |
 | V2     | :x:                         | Not implemented      |
 | V3     | :x:                         | Not implemented      |
