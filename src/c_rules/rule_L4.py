@@ -46,7 +46,7 @@ class RuleChecker:
                     print "L4 Violation at line " + str(line_block-1) + ", open curly bracket should be on the previous line! File: " + file
                 if (content[end_line_block-2] != "}" and "else" not in content[end_line_block-2]):
                     print "L4 Violation at line " + str(end_line_block-1) + ", closing curly brackets should be alone on their line! File " + file
-                    print "/!\ Do not take this violation into account in the case of a structure"
+                    print "/!\ Do not take this violation into account in the case of a typedef"
 
         if is_rule_ok:
             print "Good job buddy, no violation!"
