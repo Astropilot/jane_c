@@ -29,7 +29,6 @@ class RuleChecker:
         re_newline = re.compile(r'\n')
         for file in source_files:
             mFile = transform_c_to_xml(file)
-            root = strip_ns_prefix(etree.parse(mFile))
             with open(mFile, 'U') as content_file:
                 content = content_file.read()
             matches = re.finditer(self.POINTER_OPERATOR_RE, content)
