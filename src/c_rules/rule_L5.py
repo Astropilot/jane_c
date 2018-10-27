@@ -44,6 +44,7 @@ class RuleChecker:
                         is_only_decl_before = False
                         break
                 if is_only_decl_before == False:
+                    is_rule_ok = False
                     print "L5 Violation at line " + str(decl_line-1) + ", variables need to be declared on the top of the scope! File: " + file
 
         if is_rule_ok:

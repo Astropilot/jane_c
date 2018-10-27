@@ -31,8 +31,8 @@ class RuleChecker:
             for macro in all_macro:
                 start_line = macro.sourceline
                 macro_name = macro.xpath("name/text()")[0]
-                macro_value = macro.xpath("following-sibling::value/text()")[0]
-                if ";" in macro_value:
+                macro_value = macro.xpath("following-sibling::value/text()")
+                if len(macro_value) > 0 and ";" in macro_value[0]:
                     is_rule_ok = False
                     print "H3 Violation at line " + str(start_line-1) + ", macro '" + macro_name + "' should match only one statement! File: " + file
 
